@@ -1,0 +1,38 @@
+.icons_container{
+
+ width: 200px;
+ height: 50px;
+ margin-left: 20px;
+ margin-top: 15px;
+ display: flex;
+ flex-direction: row;
+
+}
+.icons_login > a > img{
+  width: 40px;
+  height: 40px;
+  color: black;
+}
+
+.icons_cart > a > img{
+  width: 40px;
+  height: 40px;
+  color: black;
+}
+.icons_login{
+  margin-top: 0px;
+  margin-left: 20px;
+
+}
+
+.icons_cart{
+  margin-top: 0px;
+  margin-left: 30px;
+
+}
+
+.icons_sum{
+  margin-top: px;
+  margin-left: 40px;
+
+}
