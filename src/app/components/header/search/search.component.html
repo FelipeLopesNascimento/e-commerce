@@ -1,11 +1,12 @@
-<div class="search_container">
+<div class="search-container">
   <input type="search" [(ngModel)]="termoPesquisa" (input)="onSearch()" placeholder="Pesquisa" />
-  <div *ngIf="resultados.length > 0" class="search_results">
+  <div *ngIf="resultados.length > 0" class="search-results">
     <div *ngFor="let resultado of resultados" (click)="selecionarResultado(resultado)">
       {{ resultado }}
     </div>
   </div>
-  <div *ngIf="resultados.length === 0 && termoPesquisa" class="no_results">
+  <div *ngIf="resultados.length === 0 && termoPesquisa" class="no-results">
     Nenhum resultado encontrado
   </div>
 </div>
+
