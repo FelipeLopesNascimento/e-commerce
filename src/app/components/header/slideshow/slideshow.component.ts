@@ -4,7 +4,7 @@ import Swiper from 'swiper';
 @Component({
   selector: 'app-slideshow',
   templateUrl: './slideshow.component.html',
-  styleUrl: './slideshow.component.css'
+  styleUrls: ['./slideshow.component.css']
 })
 export class SlideshowComponent implements OnInit {
 
@@ -13,15 +13,17 @@ export class SlideshowComponent implements OnInit {
     { img: '/slides/slide2.png', alt: 'Slide 2' },
     { img: '/slides/slide3.png', alt: 'Slide 3' },
     { img: '/slides/slide4.png', alt: 'Slide 4' },
-    { img: '/slides/slide5.png', alt: 'Slide 5' }
+    { img: '/slides/slide5.png', alt: 'Slide 5' },
   ];
 
   swiper: Swiper | undefined;
 
   ngOnInit() {
     this.swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
       autoplay: {
-        delay: 3000,  // Muda os slides a cada 3 segundos
+        delay: 300,  // Muda os slides a cada 3 segundos
         disableOnInteraction: false,  // Continua mudando mesmo com interação do usuário
       },
       loop: true,  // Os slides continuam em loop
