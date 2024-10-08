@@ -1,0 +1,29 @@
+.help_container{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+.help_contact > h6 > a{
+  text-decoration: none;
+  color: black;
+ }
+
+.help_questions > h6 > a{
+  text-decoration: none;
+  color: black;
+}
+
+.help_questions > h6{
+  margin-top: 3px;
+}
+
+.help_work > h6> a{
+  text-decoration: none;
+  color: black;
+}
+
+.help_work > h6{
+  margin-top: 3px;
+}

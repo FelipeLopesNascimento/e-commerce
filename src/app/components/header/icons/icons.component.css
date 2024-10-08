@@ -21,7 +21,7 @@
 }
 .icons_login{
   margin-top: 0px;
-  margin-left: 200px;
+  margin-left: 100px;
 
 }
 
@@ -32,14 +32,15 @@
 }
 
 .icons_sum{
-  margin-top: px;
+  margin-top: -10px;
   margin-left: 60px;
 }
-.icons_sum > h4{
+.icons_sum > h5{
   color: #a0998b;
+
 }
 
-.icons_sum > h3{
+.icons_sum > h4{
   color: #a0998b;
 }
 

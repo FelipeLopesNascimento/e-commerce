@@ -1,0 +1,11 @@
+.footer_container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color:#DDD3C0;
+  justify-content: space-around;
+}
+.footer_box{
+
+  height: 120px;
+}

@@ -1,0 +1,29 @@
+.policies_container{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+.policies_purchasing > h6 > a{
+  text-decoration: none;
+  color: black;
+ }
+
+.policies_delivery > h6 > a{
+  text-decoration: none;
+  color: black;
+}
+
+.policies_delivery > h6{
+  margin-top: 3px;
+}
+
+.policies_return > h6> a{
+  text-decoration: none;
+  color: black;
+}
+
+.policies_return > h6{
+  margin-top: 3px;
+}

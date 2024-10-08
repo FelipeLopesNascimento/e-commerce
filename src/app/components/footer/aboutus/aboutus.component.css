@@ -1,0 +1,29 @@
+.aboutus_container{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+.aboutus_history > h6 > a{
+  text-decoration: none;
+  color: black;
+ }
+
+.aboutus_factory > h6 > a{
+  text-decoration: none;
+  color: black;
+}
+
+.aboutus_factory > h6{
+  margin-top: 3px;
+}
+
+.aboutus_store > h6> a{
+  text-decoration: none;
+  color: black;
+}
+
+.aboutus_store > h6{
+  margin-top: 3px;
+}
