@@ -18,7 +18,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './components/content/content.component';
 import { ProductComponent } from './components/content/product/product.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-
+import { provideHttpClient } from '@angular/common/http';
 
 
 @NgModule({
@@ -46,8 +46,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     FormsModule,
     NgbModule,
 
+
   ],
-  providers: [],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
