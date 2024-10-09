@@ -4,10 +4,13 @@
   margin-top: 10px;
 
 }
+.categories > a>  img{
+  width: 100px;
+  height: 100px;
+}
 .categories > img{
   width: 100px;
   height: 100px;
-
 }
 .categories{
   display: flex;

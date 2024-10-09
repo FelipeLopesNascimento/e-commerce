@@ -4,7 +4,7 @@
 
 }
 
-.logo_text > h1{
+.logo_text > a> h1{
   font-family: 'Segoe UI';
   font-weight: bold;
   font-size: 50px;
@@ -14,10 +14,14 @@
 
 }
 
-.logo_img > img{
+.logo_text > a{
+  text-decoration: none;
+}
+.logo_img > a> img{
   width: 60px;
   border: 1px solid black;
   border-radius: 5px;
+
 }
 .logo{
   display: flex;

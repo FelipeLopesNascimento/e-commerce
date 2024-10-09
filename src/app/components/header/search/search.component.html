@@ -2,7 +2,7 @@
   <input type="search" [(ngModel)]="termoPesquisa" (input)="onSearch()" placeholder="Pesquisa" />
   <div *ngIf="resultados.length > 0" class="search-results">
     <div *ngFor="let resultado of resultados" (click)="selecionarResultado(resultado)">
-      {{ resultado }}
+      {{ resultado.nome }}
     </div>
   </div>
   <div *ngIf="resultados.length === 0 && termoPesquisa" class="no-results">

@@ -17,8 +17,9 @@ import { ContactComponent } from './components/footer/contact/contact.component'
 import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './components/content/content.component';
 import { ProductComponent } from './components/content/product/product.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { provideHttpClient } from '@angular/common/http';
+import { CategoryComponent } from './pages/category/category.component';
+
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { provideHttpClient } from '@angular/common/http';
     HomeComponent,
     ContentComponent,
     ProductComponent,
-    SidebarComponent,
+    CategoryComponent,
+
 
   ],
   imports: [
