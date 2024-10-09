@@ -6,10 +6,12 @@
     <h6>{{ product.marca }}</h6>
   </div>
   <div class="product_name">
-    <h5>{{ product.nome}}</h5>
+    <h6>{{ product.nome}}</h6>
   </div>
-  <div class="product_preço">
-    <h3>R$ {{product.preco | number:'1.2-2'}}</h3>
+  <div class="product_price">
+    <h3>R$ {{product.preco | number:'1.2-2'}}
+    <button>Adicionar</button>
+    </h3>
   </div>
 </div>
 
