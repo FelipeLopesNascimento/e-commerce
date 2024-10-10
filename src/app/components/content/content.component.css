@@ -2,12 +2,15 @@
 .product{
   display: flex;
   flex-direction: row;
-
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
 
 }
-.content_container{
+.content_product{
   margin-top: 10px;
-
+  margin-left: 20px;
+  
 }

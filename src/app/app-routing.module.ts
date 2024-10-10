@@ -6,11 +6,16 @@ import { CategoryComponent } from './pages/category/category.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent ,
+    pathMatch:'full'
   },
   {
-    path: '/categoria/:categoria',
+    path: 'categoria/:categoria',
     component: CategoryComponent
+  },
+  {
+    path:'**',
+    redirectTo:''
   }
 ];
 
