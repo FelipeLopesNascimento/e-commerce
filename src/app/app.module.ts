@@ -19,6 +19,14 @@ import { ContentComponent } from './components/content/content.component';
 import { ProductComponent } from './components/content/product/product.component';
 import { provideHttpClient } from '@angular/common/http';
 import { CategoryComponent } from './pages/category/category.component';
+import { HistoryComponent } from './pages/aboutus/history/history.component';
+import { FactoryComponent } from './pages/aboutus/factory/factory.component';
+import { StoreComponent } from './pages/aboutus/store/store.component';
+import { PurchasingComponent } from './pages/policies/purchasing/purchasing.component';
+import { DeliveryComponent } from './pages/policies/delivery/delivery.component';
+import { ReturnComponent } from './pages/policies/return/return.component';
+import { QuestionsComponent } from './pages/help/questions/questions.component';
+import { WorkComponent } from './pages/help/work/work.component';
 
 
 
@@ -39,6 +47,14 @@ import { CategoryComponent } from './pages/category/category.component';
     ContentComponent,
     ProductComponent,
     CategoryComponent,
+    HistoryComponent,
+    FactoryComponent,
+    StoreComponent,
+    PurchasingComponent,
+    DeliveryComponent,
+    ReturnComponent,
+    QuestionsComponent,
+    WorkComponent,
 
 
   ],
