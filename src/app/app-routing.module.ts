@@ -12,6 +12,7 @@ import { ContactComponent } from './pages/help/contact/contact.component';
 import { QuestionsComponent } from './pages/help/questions/questions.component';
 import { WorkComponent } from './pages/help/work/work.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { ItemComponent } from './pages/item/item.component';
 
 const routes: Routes = [
   {
@@ -62,6 +63,10 @@ const routes: Routes = [
   {
     path: 'carrinho',
     component: CartComponent
+  },
+  {
+    path: 'item/:id',
+    component: ItemComponent
   },
   {
     path:'**',

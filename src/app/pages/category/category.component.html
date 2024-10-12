@@ -1,6 +1,8 @@
 <div class="container">
 
     <div *ngFor="let product of filteredProducts" class="product_container">
+      <a [routerLink]="['/item', product.id]">
+        <div>
       <div class="product_image">
         <img [src]="product.imagem">
       </div>
@@ -12,9 +14,11 @@
       </div>
       <div class="product_price">
         <h3>R$ {{ product.preco | number:'1.2-2' }}</h3>
-        <button>Adicionar</button>
+        <button (click)="addToCart(product)">Adicionar</button>
       </div>
     </div>
-  
+    </a>
+    </div>
+
 </div>
 

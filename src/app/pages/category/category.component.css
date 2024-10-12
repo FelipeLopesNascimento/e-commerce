@@ -36,6 +36,9 @@
   bottom: 10px;
 
 }
+.product_container > a{
+  text-decoration: none;
+}
 
 .container{
   display: flex;

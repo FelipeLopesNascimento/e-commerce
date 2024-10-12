@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../../services/cart.service';
-import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-cart',
@@ -9,30 +8,39 @@ import { Subscription } from 'rxjs';
 })
 export class CartComponent implements OnInit {
   cartItems: any[] = [];
-  subscription: Subscription = Subscription.EMPTY; 
 
   constructor(private cartService: CartService) {}
 
+
+
   ngOnInit(): void {
-    this.subscription = this.cartService.getCartItems().subscribe(items => {
+    this.cartService.getCartItems().subscribe(items => {
       this.cartItems = items;
       console.log('Itens no carrinho:', this.cartItems);
-    });
+      this.getTotalPrice();
+      console.log(this.getTotalPrice())
+      });
+
   }
 
-  ngOnDestroy(): void {
-    // Certifique-se de cancelar a inscrição para evitar memory leaks
-    if (this.subscription) {
-      this.subscription.unsubscribe();
-    }
+   removeFromCart(item: any): void {
+    this.cartService.removeItem(item);
+  }
+
+  increaseFromCart(item: any): void {
+    this.cartService.increaseFromCart(item);
+  }
+
+  decreaseFromCart(item: any): void {
+    this.cartService.decreaseFromCart(item);
   }
 
   getTotalPrice(): number {
-    return this.cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
-  }
-
-  removeFromCart(item: any): void {
-    this.cartService.removeItem(item);
+    console.log(this.cartItems); // Veja se os itens estão corretos
+    return this.cartItems.reduce((total, item) => {
+      console.log(item.preco, item.quantity); // Verifique os valores
+      return total + (item.preco * item.quantity);
+    }, 0);
   }
 
   checkout(): void {

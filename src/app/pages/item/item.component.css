@@ -9,9 +9,7 @@
   position: relative;
   margin-left: 15px;
   margin-bottom: 15px;
-
-}
-
+  }
 .product_container > a{
   text-decoration: none;
 }
@@ -22,6 +20,7 @@
   }
 .product_brand > h6{
   color: rgb(56, 54, 51);
+
 }
 
 .product_price > h3{

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataProductsService } from '../../../services/data-products.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -11,7 +12,7 @@ export class SearchComponent implements OnInit {
   termoPesquisa:string = '';  // Armazena o termo de pesquisa
   resultados:any[] = [];  // Armazena os resultados filtrados
   products: any[] = [];
-  constructor(private dataProductsService: DataProductsService) { }
+  constructor(private dataProductsService: DataProductsService, private router: Router) { }
 
   ngOnInit(): void {
     // Carrega os produtos do serviço quando o componente é inicializado
@@ -21,7 +22,6 @@ export class SearchComponent implements OnInit {
   }
 
 
-  // Método chamado sempre que o usuário digita na barra de pesquisa
   onSearch(): void {
     const termo = this.termoPesquisa.toLowerCase();
     if (termo) {
@@ -31,10 +31,8 @@ export class SearchComponent implements OnInit {
     }
   }
 
-  // Método para selecionar um item e preencher o campo de pesquisa
   selecionarResultado(resultado: any): void {
-    this.termoPesquisa = resultado.nome;
-    this.resultados = [];  // Oculta a lista de resultados após a seleção
+    this.router.navigate(['/item', resultado.id]);
   }
 
 

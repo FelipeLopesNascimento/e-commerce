@@ -15,4 +15,7 @@ export class DataProductsService {
   getProducts(): Observable<any> {
     return this.http.get<any>(this.apiUrl);
   }
+  getProductById(id: string): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/${id}`);
+  }
 }

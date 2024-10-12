@@ -1,4 +1,5 @@
 <div *ngFor="let product of products" class="product_container">
+  <a [routerLink]="['/item', product.id]">
   <div class="product_image">
     <img [src]="product.imagem">
   </div>
@@ -13,5 +14,6 @@
     <button (click)="addToCart(product)">Adicionar</button>
     </h3>
   </div>
+</a>
 </div>
 

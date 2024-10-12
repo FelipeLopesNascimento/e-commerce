@@ -2,7 +2,7 @@
 
  width: 200px;
  height: 50px;
- margin-left: 20px;
+ margin-left: 0px;
  margin-top: 15px;
  display: flex;
  flex-direction: row;
@@ -33,7 +33,7 @@
 
 .icons_sum{
   margin-top: -10px;
-  margin-left: 60px;
+  margin-left: 50px;
 }
 .icons_sum > h5{
   color: #a0998b;
