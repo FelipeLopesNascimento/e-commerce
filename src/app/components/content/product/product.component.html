@@ -10,7 +10,7 @@
   </div>
   <div class="product_price">
     <h3>R$ {{product.preco | number:'1.2-2'}}
-    <button>Adicionar</button>
+    <button (click)="addToCart(product)">Adicionar</button>
     </h3>
   </div>
 </div>

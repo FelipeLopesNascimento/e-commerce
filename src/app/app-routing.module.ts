@@ -11,6 +11,7 @@ import { ReturnComponent } from './pages/policies/return/return.component';
 import { ContactComponent } from './pages/help/contact/contact.component';
 import { QuestionsComponent } from './pages/help/questions/questions.component';
 import { WorkComponent } from './pages/help/work/work.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 const routes: Routes = [
   {
@@ -57,6 +58,10 @@ const routes: Routes = [
   {
     path: 'ajuda/trabalhe',
     component: WorkComponent
+  },
+  {
+    path: 'carrinho',
+    component: CartComponent
   },
   {
     path:'**',
