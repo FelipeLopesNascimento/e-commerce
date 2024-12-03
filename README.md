@@ -1,3 +1,23 @@
+E-commerce de Loja de Artesanato 🛍️
+Este projeto é um e-commerce desenvolvido com Angular e TypeScript, voltado para a comercialização de produtos de artesanato. A aplicação oferece uma experiência moderna e intuitiva para lojistas e clientes, incluindo:
+
+Exibição de produtos organizados por categorias.
+Sistema de busca eficiente para navegação rápida.
+Página detalhada para cada produto.
+Carrinho de compras funcional.
+API backend robusta para gerenciamento de produtos e categorias.
+Objetivo do Projeto
+Facilitar a digitalização de pequenas lojas de artesanato, permitindo que artesãos alcancem um público maior por meio de uma plataforma online eficiente.
+
+Tecnologias Utilizadas
+Frontend: Angular, TypeScript, HTML5, CSS3.
+Backend: ASP.NET Core.
+Banco de Dados: SQL Server integrado via Entity Framework Core.
+Outras Ferramentas: Bootstrap para estilização e Swagger para documentação da API.
+Deploy e Execução
+Confira os passos detalhados para rodar a aplicação no repositório.
+
+
 # ECommerce
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
